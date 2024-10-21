@@ -1,21 +1,20 @@
 import "./globals.css";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Outfit } from "next/font/google";
+import { Rethink_Sans } from "next/font/google";
 
-const globalNextFont = Outfit ({
+const globalNextFont = Rethink_Sans ({
     subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+    weight: ["400", "500", "600", "700", "800"]
 });
 
 export const metadata = {
     title: "Gabin Hallosserie",
-    description: "I'm a student in development and this is my personal website.",
+    description: "Actuellement à l&apos;ESN 81 à Castres, je suis étudiant en programmation logiciel et web. Je suis à la recherche d&apos;un contrat d&apos;apprentissage pour une durée de 1 à 3 ans.",
 };
 
 export default function RootLayout({children}) {
     return (
         <html lang="en" style={{scrollBehavior: "smooth"}}>
-            <body className={`${globalNextFont.className} antialiased bg-[#381026]`}>
+            <body className={`${globalNextFont.className} antialiased bg-[#11131F]`}>
                 {children}
             </body>
         </html>

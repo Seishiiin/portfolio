@@ -1,32 +1,40 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import {usePathname} from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+
+import { GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function Navbar() {
-    const [scroll, setScroll] = useState(0);
-    const pathname = usePathname();
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScroll(window.scrollY);
-        }
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }
-    }, []);
-
-    const opacity = Math.max(0, 1 - scroll / 700);
-
     return (
-        <div className={"z-10 w-dvw h-[10dvh] flex justify-between items-center " + (scroll > 710 ? "" : "sticky top-0")} style={{opacity: opacity, transition: "opacity 0.5s ease"}}>
-            <a href={"/"} className={"text-white text-3xl font-black ml-5"}>PORTFOLIO</a>
-            <div className={"flex justify-between items-center"}>
-                <a href={"/projects"} className={"z-10 text-white border-2  hover:border-dashed " + (pathname === "/projects" ? " border-dashed bg-white text-[#381026] border-[#381026]" : "border-dotted border-white") + " border-white rounded-full px-3 py-1 mr-5 duration-300"}>PROJETS</a>
-                <a href={"/contact"} className={"z-10 text-white border-2 hover:border-dashed " + (pathname === "/contact" ? " border-dashed bg-white text-[#381026] border-[#381026]" : "border-dotted border-white") + " rounded-full px-3 py-1 mr-5 duration-300"}>CONTACT</a>
+        <div className={"bg-[#11131F] text-[#D6E1FF] w-dvw h-[10dvh] sm:px-10 px-5 flex justify-between items-center"}>
+            <div className={"flex justify-start items-center"}>
+                <Image src={"/assets/pp.jpeg"} alt={"Photo de profil"} width={1920} height={1080} className={"w-[55px] h-[55px] hidden sm:block rounded-xl"} />
+                <div className={"flex flex-col justify-center items-start ml-5"}>
+                    <h1 className={"text-2xl font-black"}>Gabin HALLOSSERIE</h1>
+                    <h2 className={"text-sm"}>Étudiant programmation web</h2>
+                </div>
+            </div>
+
+            <div className={"flex justify-end items-center gap-5 text-sm"}>
+                <Link href={"https://github.com/Seishiiin"} target={"_blank"} className={"flex justify-center items-center gap-5"}>
+                    <span className={"hidden md:block hover:text-[#9EB1FF]"}>GitHub</span>
+                    <span className={"block md:hidden hover:text-[#9EB1FF]"}><GitHubLogoIcon /></span>
+                </Link>
+
+                <span className={"hidden md:block"}>|</span>
+
+                <Link href={"https://www.linkedin.com/in/gabin-hallosserie/"} target={"_blank"} className={"flex justify-center items-center gap-5"}>
+                    <span className={"hidden md:block hover:text-[#9EB1FF]"}>LinkedIn</span>
+                    <span className={"block md:hidden hover:text-[#9EB1FF]"}><LinkedInLogoIcon /></span>
+                </Link>
+
+                <span className={"hidden md:block"}>|</span>
+
+                <Link href={"https://www.instagram.com/gabin.hls/"} target={"_blank"} className={"flex justify-center items-center gap-5"}>
+                    <span className={"hidden md:block hover:text-[#9EB1FF]"}>Instagram</span>
+                    <span className={"block md:hidden hover:text-[#9EB1FF]"}><InstagramLogoIcon /></span>
+                </Link>
             </div>
         </div>
     )
