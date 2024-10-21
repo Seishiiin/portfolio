@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en" style={{scrollBehavior: "smooth"}}>
-            <body className={`${globalNextFont.className} antialiased`}>
+            <body className={`${globalNextFont.className} antialiased bg-[#381026]`}>
                 {children}
             </body>
         </html>
