@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Rethink_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 const globalNextFont = Rethink_Sans ({
     subsets: ["latin"],
@@ -15,6 +16,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en" style={{scrollBehavior: "smooth"}}>
             <body className={`${globalNextFont.className} antialiased bg-[#11131F]`}>
+                <Analytics />
                 {children}
             </body>
         </html>
