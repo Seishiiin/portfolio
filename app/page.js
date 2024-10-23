@@ -1,7 +1,11 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
-import { ArrowDownIcon, BackpackIcon, RocketIcon } from "@radix-ui/react-icons";
+import { ArrowDownIcon, RocketIcon, GlobeIcon, BackpackIcon, GearIcon, BarChartIcon } from "@radix-ui/react-icons";
+
+import SkillCard from "@/components/SkillCard";
 
 /*
 Palette de couleurs de l'application :
@@ -46,7 +50,7 @@ export default function Home() {
                 </div>
 
                 <div className={"w-full h-full lg:flex hidden flex-col justify-center items-end"}>
-                    <Image src={"/assets/webstorm.png"} alt={"Photo de profil"} width={3840} height={2160} className={"xl:w-[calc(1920px/3.5)] w-[calc(1920px/5)] xl:h-[calc(1080px/3.5)] h-[calc(1080px/5)] rounded-md"} />
+                    <Image src={"/assets/landscape.JPG"} alt={"Photo de profil"} width={3840} height={2160} className={"xl:w-[calc(1920px/3.5)] w-[calc(1920px/5)] xl:h-[calc(1080px/3.5)] h-[calc(1080px/5)] rounded-md"} />
                 </div>
 
                 <div className={"absolute bottom-4 w-dvw h-[5dvh] flex justify-center items-center"}>
@@ -58,6 +62,23 @@ export default function Home() {
                 </div>
             </div>
 
+            <div id={"about"} className={"w-dvw h-[90dvh] flex justify-between items-end py-[10dvh] sm:px-10 px-5"}>
+                <SkillCard middle={false}
+                           title={"Développement logiciel"}
+                           description={"Maîtrise de Java et Python, avec quelques notions sur Windev pour le développement d'applications."}
+                            icon={<GearIcon className={"w-12 h-12 text-[#D6E1FF]"}/>}
+                />
+                <SkillCard middle={true}
+                           title={"Développement web"}
+                           description={"Création de sites web dynamiques avec HTML, CSS, PHP et JavaScript. Expérience avec les frameworks CodeIgniter, Next.js et les ORM Prisma, Eloquent."}
+                           icon={<GlobeIcon className={"w-12 h-12 text-[#D6E1FF]"}/>}
+                />
+                <SkillCard middle={false}
+                           title={"Base de données"}
+                           description={"Gestion de bases de données avec MySQL. Conception MCD et requêtes SQL optimisées."}
+                            icon={<BarChartIcon className={"w-12 h-12 text-[#D6E1FF]"}/>}
+                />
+            </div>
         </div>
     );
 }
