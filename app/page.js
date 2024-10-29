@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
 
                 <div className={"w-full h-full lg:flex hidden flex-col justify-center items-end"}>
-                    <Image src={"/assets/landscape.JPG"} alt={"Photo de profil"} width={3840} height={2160} className={"xl:w-[calc(1920px/3.5)] w-[calc(1920px/5)] xl:h-[calc(1080px/3.5)] h-[calc(1080px/5)] rounded-md"} />
+                    <Image src={"/assets/webstorm.JPG"} alt={"Photo de profil"} width={3840} height={2160} className={"xl:w-[calc(1920px/3.5)] w-[calc(1920px/5)] xl:h-[calc(1080px/3.5)] h-[calc(1080px/5)] rounded-md"} />
                 </div>
 
                 <div className={"absolute bottom-4 w-dvw h-[5dvh] flex justify-center items-center"}>
