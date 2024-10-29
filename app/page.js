@@ -24,12 +24,12 @@ export default function Home() {
 
             <div className={"relative w-full h-[90dvh] flex justify-between items-center"}>
                 <div className={"h-full sm:px-10 px-5 flex flex-col justify-center items-start gap-6"}>
-                    <h1 className={"relative ml-14 text-[#D6E1FF] text-4xl font-bold"}><span className={"absolute -left-14"}>👋</span>Hey, moi c'est <span className={"text-[#3E63DD]"}>Gabin HALLOSSERIE</span></h1>
+                    <h1 className={"relative ml-14 text-[#D6E1FF] text-4xl font-bold"}><span className={"absolute -left-14"}>👋</span>Hey, moi c&apos;est <span className={"text-[#3E63DD]"}>Gabin HALLOSSERIE</span></h1>
 
                     <div className={"flex sm:flex-row flex-col sm:justify-start justify-center sm:items-center items-start sm:gap-5 gap-2"}>
                         <div className={"ml-14 bg-[#182449] flex justify-start items-center gap-2 p-2 rounded-xl"}>
                             <div className={"bg-[#3E63DD] w-[10px] h-[10px] rounded-full animate-pulse"}></div>
-                            <h2 className={"text-[#3E63DD] font-bold  text-sm"}>À la recherche d'une alternance</h2>
+                            <h2 className={"text-[#3E63DD] font-bold  text-sm"}>À la recherche d&apos;une alternance</h2>
                         </div>
 
                         <div className={"ml-14 sm:ml-0 bg-orange-100 flex justify-start items-center gap-2 p-2 rounded-xl"}>
@@ -38,7 +38,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className={"w-3/5 ml-14 text-[#D6E1FF] text-sm"}>Je suis un étudiant en programmation web passionné par le développement d'applications web modernes et performantes. J'aime apprendre de nouvelles technologies et les appliquer dans des projets personnels. Je suis actuellement en bachelor CSI à l&apos;ESN 81 à Castres</p>
+                    <p className={"w-3/5 ml-14 text-[#D6E1FF] text-sm"}>Je suis un étudiant en programmation web passionné par le développement d&apos;applications web modernes et performantes. J&apos;aime apprendre de nouvelles technologies et les appliquer dans des projets personnels. Je suis actuellement en bachelor CSI à l&apos;ESN 81 à Castres</p>
                 </div>
 
                 <div className={"hidden xl:flex h-full sm:px-10 px-5 flex-col justify-center items-end"}>
