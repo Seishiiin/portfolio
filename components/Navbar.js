@@ -1,11 +1,11 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
-import { GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export default function Navbar() {
+
+
     return (
         <div className={"bg-[#11131F] text-[#D6E1FF] w-dvw h-[10dvh] sm:px-10 px-5 flex justify-between items-center"}>
             <div className={"flex justify-start items-center"}>
@@ -27,13 +27,6 @@ export default function Navbar() {
                 <Link href={"https://www.linkedin.com/in/gabin-hallosserie/"} target={"_blank"} className={"flex justify-center items-center gap-5"}>
                     <span className={"hidden md:block hover:text-[#9EB1FF]"}>LinkedIn</span>
                     <span className={"block md:hidden hover:text-[#9EB1FF]"}><LinkedInLogoIcon /></span>
-                </Link>
-
-                <span className={"hidden md:block"}>|</span>
-
-                <Link href={"https://www.instagram.com/gabin.hls/"} target={"_blank"} className={"flex justify-center items-center gap-5"}>
-                    <span className={"hidden md:block hover:text-[#9EB1FF]"}>Instagram</span>
-                    <span className={"block md:hidden hover:text-[#9EB1FF]"}><InstagramLogoIcon /></span>
                 </Link>
             </div>
         </div>

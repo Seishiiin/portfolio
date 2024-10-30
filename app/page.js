@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import {DoubleArrowDownIcon} from "@radix-ui/react-icons";
 
 /*
 Palette de couleurs de l'application :
@@ -38,19 +39,21 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className={"w-3/5 ml-14 text-[#D6E1FF] text-sm"}>Je suis un étudiant en programmation web passionné par le développement d&apos;applications web modernes et performantes. J&apos;aime apprendre de nouvelles technologies et les appliquer dans des projets personnels. Je suis actuellement en bachelor CSI à l&apos;ESN 81 à Castres</p>
+                    <p className={"sm:w-3/5 w-full ml-14 sm:pr-0 pr-14 text-[#D6E1FF] text-sm"}>Je suis un étudiant en programmation web passionné par le développement d&apos;applications web modernes et performantes. J&apos;aime apprendre de nouvelles technologies et les appliquer dans des projets personnels. Je suis actuellement en bachelor CSI à l&apos;ESN 81 à Castres</p>
                 </div>
 
                 <div className={"hidden xl:flex h-full sm:px-10 px-5 flex-col justify-center items-end"}>
                     <Image src={"/assets/webstorm.png"} alt={"Photo de mon environnement de développement"} width={1500} height={844} />
                 </div>
 
-               {/*<a href={"#"} className={"absolute w-[300px] text-center bottom-10 left-[calc(50%-150px)] transform -translate-x-1/2 flex justify-center items-center gap-5 animate-bounce"}>
+               <a href={"#projects"} className={"absolute w-[300px] text-center bottom-5 left-[calc(50%-150px)] transform -translate-x-1/2 flex justify-center items-center gap-5 animate-bounce"}>
                     <DoubleArrowDownIcon className={"w-4 h-4 text-[#3E63DD]"} />
                     <p className={"text-[#D6E1FF] text-sm"}>En savoir plus sur moi</p>
                     <DoubleArrowDownIcon className={"w-4 h-4 text-[#3E63DD]"} />
-                </a>*/}
+                </a>
             </div>
+
+            <div id={"projects"} className={"w-full h-dvh flex flex-col justify-start items-center"}></div>
         </div>
     );
 }
