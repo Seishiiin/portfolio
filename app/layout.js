@@ -16,7 +16,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en" style={{scrollBehavior: "smooth"}}>
             <body className={`${globalNextFont.className} antialiased bg-[#11131F]`}>
-                <Analytics />
+                <Analytics/>
                 {children}
             </body>
         </html>
