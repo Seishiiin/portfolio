@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import {ImageIcon, LockClosedIcon, RocketIcon, TrashIcon, QuestionMarkIcon, GlobeIcon} from "@radix-ui/react-icons";
+import { ImageIcon } from "@radix-ui/react-icons";
 
-export default function ProjectCard({ title, description, technologies, status, image }) {
+export default function ProjectCard({ title, description, technologies, image }) {
     return (
         <div className={"w-full h-auto flex flex-col justify-between items-start gap-4 bg-[#1f1f1f] text-[#fffbe4] rounded-lg p-5"}>
             <div className={"w-full flex flex-col justify-start items-start gap-4"}>
