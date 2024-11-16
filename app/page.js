@@ -6,7 +6,7 @@ export default function Home() {
         <div className={"w-full h-auto min-h-screen bg-[#0a0901] text-[#fffbe4]"}>
             <Navbar/>
 
-            <div className={"w-5/6 lg:px-0 lg:w-3/4 min-h-[calc(100dvh-12rem)] flex flex-col justify-center sm:justify-center items-center gap-5 sm:gap-20 mx-auto mt-16 mb-16 "}>
+            <div className={"w-5/6 lg:px-0 lg:w-3/4 min-h-[calc(100dvh-12rem)] flex flex-col justify-around items-center mx-auto mt-16 mb-16 "}>
                 <div className={"w-full flex justify-between items-center"}>
                     <div className={"w-full lg:w-1/2 h-full flex flex-col justify-center items-start gap-5"}>
                         <div className={"flex flex-col justify-start items-start"}>
@@ -31,20 +31,29 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className={"w-full grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-5"}>
+                <div className={"w-full grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-5"}>
                     <div className={"group flex flex-col justify-center items-start gap-2 px-2 md:px-5 py-3 bg-[#1a151e] rounded-xl"}>
                         <h2 className={"text-md font-bold"}>Mon dernier diplôme 🎓</h2>
-                        <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>BTS SIO option SLAM - 14,52/20 - Lycée Emile Peytavin - Mende</p>
+                        <div className={"flex flex-col"}>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>BTS SIO option SLAM</p>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Emile Peytavin - Mende</p>
+                        </div>
                     </div>
 
                     <div className={"group flex flex-col justify-center items-start gap-2 px-2 md:px-5 py-3 bg-[#1a151e] rounded-xl"}>
                         <h2 className={"text-md font-bold"}>Mon dernier stage 🛠️</h2>
-                        <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Développeur web backend - 5 semaines - Développement d&apos;une API</p>
+                        <div className={"flex flex-col"}>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Développement d&apos;une API</p>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>PHP - CodeIgniter - Eloquent</p>
+                        </div>
                     </div>
 
                     <div className={"group flex flex-col justify-center items-start gap-2 px-2 md:px-5 py-3 bg-[#1a151e] rounded-xl"}>
                         <h2 className={"text-md font-bold"}>Mon dernier projet 🚀</h2>
-                        <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Développement web fullstack - &quot;Le Bofar&quot; - Site vitrine restaurant fictif</p>
+                        <div className={"flex flex-col"}>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Site vitrine d'un restaurant</p>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>JavaScript - Next.js - Prisma</p>
+                        </div>
                     </div>
                 </div>
 
