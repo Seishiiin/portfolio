@@ -51,7 +51,7 @@ export default function Home() {
                     <div className={"group flex flex-col justify-center items-start gap-2 px-2 md:px-5 py-3 bg-[#1a151e] rounded-xl"}>
                         <h2 className={"text-md font-bold"}>Mon dernier projet 🚀</h2>
                         <div className={"flex flex-col"}>
-                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Site vitrine d'un restaurant</p>
+                            <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>Site vitrine d&apos;un restaurant</p>
                             <p className={"text-sm text-[#97959f] group-hover:text-[#fffbe4] duration-300 font-light"}>JavaScript - Next.js - Prisma</p>
                         </div>
                     </div>
