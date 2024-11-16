@@ -6,7 +6,7 @@ export default function Home() {
         <div className={"w-full h-auto min-h-screen bg-[#0a0901] text-[#fffbe4]"}>
             <Navbar/>
 
-            <div className={"w-5/6 lg:px-0 lg:w-3/4 min-h-[calc(100dvh-12rem)] flex flex-col justify-around items-center mx-auto mt-16 mb-16 "}>
+            <div className={"w-5/6 lg:px-0 lg:w-3/4 min-h-[calc(100dvh-12rem)] flex flex-col justify-around items-center mx-auto mt-16"}>
                 <div className={"w-full flex justify-between items-center"}>
                     <div className={"w-full lg:w-1/2 h-full flex flex-col justify-center items-start gap-5"}>
                         <div className={"flex flex-col justify-start items-start"}>
@@ -56,7 +56,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );
