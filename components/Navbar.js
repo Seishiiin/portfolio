@@ -21,11 +21,11 @@ export default function Navbar() {
             </div>
 
             <div className={"h-full flex justify-end items-center gap-4"}>
-                <Link href={"/"} className={`hidden md:block text-sm ${pathname === "/" ? "text-[#b978ed]" : ""} mr-4`}>Accueil</Link>
-                <Link href={"/"} className={`block md:hidden text-sm ${pathname === "/" ? "text-[#b978ed]" : ""}`}><HomeIcon /></Link>
+                <Link href={"/"} className={`hidden md:block text-sm ${pathname === "/" ? "text-purple-600" : ""} mr-4`}>Accueil</Link>
+                <Link href={"/"} className={`block md:hidden text-sm ${pathname === "/" ? "text-purple-600" : ""}`}><HomeIcon /></Link>
 
-                <Link href={"/projects"} className={`hidden md:block text-sm ${pathname === "/projects" ? "text-[#b978ed]" : ""}`}>Projets</Link>
-                <Link href={"/projects"} className={`block md:hidden text-sm ${pathname === "/projects" ? "text-[#b978ed]" : ""}`}><ArchiveIcon /></Link>
+                <Link href={"/projects"} className={`hidden md:block text-sm ${pathname === "/projects" ? "text-purple-600" : ""}`}>Projets</Link>
+                <Link href={"/projects"} className={`block md:hidden text-sm ${pathname === "/projects" ? "text-purple-600" : ""}`}><ArchiveIcon /></Link>
                 <p>|</p>
                 <Link target={"_blank"} href={"https://github.com/seishiiin"}><GitHubLogoIcon /></Link>
                 <Link target={"_blank"} href={"https://www.linkedin.com/in/gabin-hallosserie/"}><LinkedInLogoIcon /></Link>
