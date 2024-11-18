@@ -1,10 +1,8 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
-
-// Color palette
-// white  : #fffbe4
-// black  : #0a0901
-// purple : #b978ed
 
 const globalNextFont = Poppins({
     subsets: ["latin"],
@@ -19,6 +17,8 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
+            <SpeedInsights />
+            <Analytics />
             <body className={`${globalNextFont.className} antialiased`}>
                 {children}
             </body>
