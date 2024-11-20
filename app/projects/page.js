@@ -43,10 +43,6 @@ export default function Projects() {
         return projects[project].technologies.includes(selectedTech);
     });
 
-    const resetFilter = () => {
-        setSelectedTech('');
-    };
-
     const getIconPath = (tech) => `/assets/technos/${tech.toLowerCase().replace(/ /g, "_")}.svg`;
 
     return (
@@ -70,9 +66,8 @@ export default function Projects() {
                                 )}
                             </button>
                             {menuOpen && (
-
                                 <ul className="absolute left-0 mt-2 bg-[#1a1a1a] border border-[#333] rounded-md shadow-lg z-10 w-56 max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-[#888] scrollbar-thumb-rounded scrollbar-track-[#333]">
-                                    <li className="flex items-center gap-2 px-4 py-2 hover:bg-[#333] cursor-pointer" onClick={() => {setSelectedTech('');setMenuOpen(false);}}>Toutes les technologies</li>
+                                    <li className="flex items-center gap-2 px-4 py-2 hover:bg-[#333] cursor-pointer border-b border-[#333]" onClick={() => {setSelectedTech('');setMenuOpen(false);}}>Toutes les technologies</li>
                                     {allTechnologies.map((tech) => (
                                         <li key={tech} className="flex items-center gap-2 px-4 py-2 hover:bg-[#333] cursor-pointer" onClick={() => {setSelectedTech(tech);setMenuOpen(false);}}>
                                             <Image width={1920} height={1920} src={getIconPath(tech)} alt={tech} className="w-5 h-5" />
