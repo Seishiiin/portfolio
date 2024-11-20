@@ -21,6 +21,12 @@ export default function Projects() {
             "technologies": ["Next.js", "Tailwind CSS", "Prisma"],
             "image": "",
         },
+/*        "REA Dreams": {
+            "title": "REA Dreams",
+            "description": "Site de gestions de rêves boostés à l'IA",
+            "technologies": ["NextJS", "Supabase", "OpenAI"],
+            "image": "/assets/rea-dreams.png",
+        }*/
     }
 
     return (
