@@ -18,11 +18,6 @@ export default function Home() {
                                 <div className={"w-3 h-3 bg-purple-600 animate-pulse rounded-full"}></div>
                                 <p className={"text-sm font-light"}>À la recherche d&apos;alternance</p>
                             </div>
-
-                            <div className={"hidden xl:flex justify-start items-center gap-2 py-2 px-2 bg-red-200 text-[#0a0901] rounded-full"}>
-                                <div className={"w-3 h-3 bg-red-600 animate-pulse rounded-full"}></div>
-                                <p className={"text-sm font-light"}>Portfolio en construction</p>
-                            </div>
                         </div>
                     </div>
 
