@@ -24,13 +24,7 @@ export default function Projects() {
             "description": "Site vitrine et de réservation pour un restaurant",
             "technologies": ["NextJS", "Prisma", "TailWindCSS", "WebStorm"],
             "image": "",
-        },
-        "Portfolio": {
-            "title": "Portfolio",
-            "description": "Site web de présentation de mes projets",
-            "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
-            "image": "/assets/portfolio.png",
-        },
+        }
     };
 
     const [selectedTech, setSelectedTech] = useState('');
