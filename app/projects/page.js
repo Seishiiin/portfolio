@@ -29,7 +29,7 @@ export default function Projects() {
             "title": "French Clock",
             "description": "Site web dynamique d'horloge",
             "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
-            "image": "",
+            "image": "/assets/french-clock.png",
         },
     };
 
