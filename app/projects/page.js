@@ -27,8 +27,8 @@ export default function Projects() {
         },
         "French Clock": {
             "title": "French Clock",
-            "description": "Site web dynamique d'horloge",
-            "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
+            "description": "Horloge numérique en français",
+            "technologies": ["HTML", "CSS", "JavaScript", "VSCode"],
             "image": "/assets/french-clock.png",
         },
     };
