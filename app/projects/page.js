@@ -27,7 +27,7 @@ export default function Projects() {
         },
         "French Clock": {
             "title": "French Clock",
-            "description": "Horloge numérique en français",
+            "description": "Horloge numérique dynamique et design",
             "technologies": ["HTML", "CSS", "JavaScript", "VSCode"],
             "image": "/assets/french-clock.png",
         },
