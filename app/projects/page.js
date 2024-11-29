@@ -35,7 +35,7 @@ export default function Projects() {
             "title": "Personal Dashboard",
             "description": "Tableau de bord personnel disponible sur GitHub pour d'éventuelles contributions",
             "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
-            "image": "personal-dashboard.png",
+            "image": "/assets/personal-dashboard.png",
         }
     };
 
