@@ -31,6 +31,12 @@ export default function Projects() {
             "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
             "image": "/assets/french-clock.png",
         },
+        "Personal Dashboard": {
+            "title": "Personal Dashboard",
+            "description": "Tableau de bord personnel disponible sur GitHub pour d'éventuelles contributions",
+            "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
+            "image": "personal-dashboard.png",
+        }
     };
 
     const [selectedTech, setSelectedTech] = useState('');
