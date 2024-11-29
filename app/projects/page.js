@@ -24,7 +24,13 @@ export default function Projects() {
             "description": "Site vitrine et de réservation pour un restaurant",
             "technologies": ["NextJS", "Prisma", "TailWindCSS", "WebStorm"],
             "image": "",
-        }
+        },
+        "French Clock": {
+            "title": "French Clock",
+            "description": "Site web dynamique d'horloge",
+            "technologies": ["NextJS", "TailWindCSS", "WebStorm"],
+            "image": "/assets/french-clock.png",
+        },
     };
 
     const [selectedTech, setSelectedTech] = useState('');
