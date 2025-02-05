@@ -1,3 +1,4 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
