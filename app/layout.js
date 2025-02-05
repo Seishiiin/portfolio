@@ -8,7 +8,7 @@ const globalNextFont = Poppins({
 
 export const metadata = {
     title: "Gabin Hallosserie | Portfolio",
-    description: "Développeur web frontend junior, je suis passionné par la création de sites web et d'applications web. Découvrez mes projets et mon parcours.",
+    description: "Développeur web junior, je suis passionné par la création de sites web et d'applications web. Découvrez mes projets et mon parcours.",
 };
 
 export default function RootLayout({children}) {
