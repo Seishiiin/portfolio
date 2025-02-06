@@ -1,3 +1,4 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +15,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="fr">
-            <body className={`${globalNextFont.className} antialiased`}>
+            <body className={`${globalNextFont.className} antialiased scroll-smooth`}>
                 {children}
             </body>
         </html>
