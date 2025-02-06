@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="fr">
-            <body className={`${globalNextFont.className} antialiased`}>
+            <body className={`${globalNextFont.className} antialiased scroll-smooth`}>
                 {children}
             </body>
         </html>
