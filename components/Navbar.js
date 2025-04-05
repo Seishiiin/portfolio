@@ -17,7 +17,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <div id={"container"} className={`sticky top-0 ${isScrolled ? "w-full h-20 border-b-2" : "w-2/3 h-16 border-2"} px-6 bg-white/60 backdrop-blur-md text-black mt-4 flex justify-between items-center ${isScrolled ? "" : "rounded-full"} transition-all duration-300 ease-in-out`}>
+        <div id={"container"} className={`sticky top-0 ${isScrolled ? "w-full h-20 border-b-2" : "w-2/3 h-16 border-2"} px-6 bg-white/60 backdrop-blur-md text-black mt-4 flex justify-between items-center ${isScrolled ? "" : "rounded-full"} transition-all duration-300 ease-in-out z-20`}>
             <div className={"flex items-center space-x-3"}>
                 <Link href={"/"} className={"flex justify-start items-center gap-3"}>
                     {isScrolled && (
