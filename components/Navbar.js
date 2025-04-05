@@ -24,22 +24,23 @@ export default function Navbar() {
                         <Image src={"/assets/profile.JPEG"} width={1920} height={1920} alt={"Gabin Hallosserie"} className={"w-12 h-12 rounded-full transition-transform duration-300"}/>
                     )}
                     <div className={"flex flex-col items-start"}>
-                        <h1 className={`text-lg font-semibold transition-all duration-300 ${isScrolled ? "-mt-1" : ""}`}>Gabin Hallosserie</h1>
-                        <p className={"text-xs text-gray-600"}>Développeur web junior</p>
+                        <Image src={"/assets/profile.JPEG"} width={1920} height={1920} alt={"Gabin Hallosserie"} className={`block md:hidden w-12 h-12 rounded-xl ${isScrolled ? "hidden" : "block"} transition-transform duration-300`}/>
+                        <h1 className={`hidden md:block text-lg font-semibold transition-all duration-300 ${isScrolled ? "-mt-1" : ""}`}>Gabin Hallosserie</h1>
+                        <p className={"hidden md:block text-xs text-gray-600"}>Développeur web junior</p>
                     </div>
                 </Link>
             </div>
 
             <div className={"flex items-center gap-8"}>
-                <Link href={"/about"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
+                <Link href={"#about"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
                     À propos
                     <span className={"absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"}></span>
                 </Link>
-                <Link href={"/projects"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
+                <Link href={"#projects"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
                     Projets
                     <span className={"absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"}></span>
                 </Link>
-                <Link href={"/contact"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
+                <Link href={"#contact"} className={"relative text-sm font-semibold transition-all duration-300 ease-in-out group"}>
                     Contact
                     <span className={"absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"}></span>
                 </Link>
