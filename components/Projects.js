@@ -4,26 +4,33 @@ import Link from "next/link";
 export default function Projects() {
     const projects = [
         {
+            name: "Aetheris - Library Manager",
+            description: "Aetheris est une application Java de gestion de bibliothèque permettant de gérer les livres, les emprunts et les retours. Elle est conçue pour être utilisée par les bibliothécaires et les utilisateurs.",
+            link: "",
+            logo: "/assets/logos/intellijidea.svg",
+            date: "janvier 2025"
+        },
+        {
             name: "Bird - Mind Mapping",
             description: "Bird est une application web de création de cartes mentales spécialement conçue pour des collégiens pour organiser leurs projets d'orientation.",
             link: "",
-            logo: "/assets/logos/codeigniter.svg",
+            logo: "/assets/logos/phpstorm.svg",
             date: "janvier 2024 - février 2024"
         },
         {
             name: "Bofar - Restaurant savoyard",
             description: "Le Bofar est un site vitrine pour un restaurant fictif typique savoyard, permettant de découvrir le restaurant et de réserver une table.",
             link: "",
-            logo: "/assets/logos/nextdotjs.svg",
-            date: "janvier 2024 - février 2024"
+            logo: "/assets/logos/webstorm.svg",
+            date: "juin 2024 - juillet 2024"
         },
         {
             name: "Nexus - Social Network",
             description: "Nexus est une application mobile de type reseau social permettant de mettre en lien les joueurs de jeux vidéos en fonction de leurs jeux préférés et de leur niveau de jeu.",
             link: "",
-            logo: "/assets/logos/react.svg",
-            date: "janvier 2024 - février 2024"
-        }
+            logo: "/assets/logos/webstorm.svg",
+            date: "juin 2024 - juillet 2024"
+        },
     ]
 
     return (

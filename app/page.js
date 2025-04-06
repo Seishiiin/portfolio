@@ -3,8 +3,10 @@
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 import Image from "next/image";
+
 export default function Home() {
     return (
         <div className="flex flex-col items-center justify-center bg-gray-100">
@@ -26,13 +28,14 @@ export default function Home() {
                 </div>
             </div>
 
-            <hr className={"w-2/3 h-1 bg-gray-300 mt-5 mb-20"}/>
+            <hr className={"w-2/3 h-1 bg-gray-300 mt-5 mb-20"} />
 
             <Skills />
 
-            <hr className={"w-2/3 h-1 bg-gray-300 mt-5 mb-20"}/>
+            <hr className={"w-2/3 h-1 bg-gray-300 mt-5 mb-20"} />
 
             <Projects />
+            <Footer />
         </div>
     );
 }
