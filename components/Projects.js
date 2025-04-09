@@ -3,13 +3,6 @@ import Link from "next/link";
 
 export default function Projects() {
     const projects = [
-        /*{
-            name: "Torus - Apple Ring",
-            description: "Torus est un site web vitrine pour un concept de bague connectée Apple, permettant de découvrir le produit dans un design épuré et moderne comme sait le faire Apple avec ses produits.",
-            link: "https://apple-ring.vercel.app/",
-            logo: "/assets/logos/webstorm.svg",
-            date: "avril 2025 - toujours en cours"
-        },*/
         {
             name: "Aetheris - Library Manager",
             description: "Aetheris est une application Java de gestion de bibliothèque permettant de gérer les livres, les emprunts et les retours. Elle est conçue pour être utilisée par les bibliothécaires et les utilisateurs.",
