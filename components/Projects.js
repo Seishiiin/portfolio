@@ -5,7 +5,7 @@ export default function Projects() {
     const projects = [
         {
             name: "CleanPy - Code Cleaner",
-            description: "CleanPy est un outil de nettoyage de code Python qui analyse le code source et propose des améliorations pour le rendre plus lisible, maintenant et performan. Il est conçu pour aider les développeurs à améliorer la qualité de leur code.",
+            description: "CleanPy est un outil de nettoyage de code Python qui analyse le code source et propose des améliorations pour le rendre plus lisible et maintenable. Il est utile pour les développeurs souhaitant améliorer la qualité de leur code.",
             link: "https://github.com/Seishiiin/clean-py",
             logo: "/assets/logos/pycharm.svg",
             date: "avril 2025 - en cours de développement"
