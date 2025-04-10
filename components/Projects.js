@@ -4,6 +4,13 @@ import Link from "next/link";
 export default function Projects() {
     const projects = [
         {
+            name: "CleanPy - Code Cleaner",
+            description: "CleanPy est un outil de nettoyage de code Python qui analyse le code source et propose des améliorations pour le rendre plus lisible, maintenant et performan. Il est conçu pour aider les développeurs à améliorer la qualité de leur code.",
+            link: "https://github.com/Seishiiin/clean-py",
+            logo: "/assets/logos/pycharm.svg",
+            date: "avril 2025 - en cours de développement"
+        },
+        {
             name: "Aetheris - Library Manager",
             description: "Aetheris est une application Java de gestion de bibliothèque permettant de gérer les livres, les emprunts et les retours. Elle est conçue pour être utilisée par les bibliothécaires et les utilisateurs.",
             link: "",
