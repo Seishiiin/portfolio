@@ -4,11 +4,18 @@ import Link from "next/link";
 export default function Projects() {
     const projects = [
         {
+            name: "Lucide",
+            description: "Lucide est une application iOS développée pour aider les gens à ce concentrer. Elle est en cours de développement mais l'idée est d'y intégrer un pomodoro, une liste de tâche intelligente ainsi que d'autres features utiles.",
+            link: "",
+            logo: "/assets/logos/xcode.svg",
+            date: "mai 2025 - en cours de développement"
+        },
+        {
             name: "CleanPy - Code Cleaner",
             description: "CleanPy est un outil de nettoyage de code Python qui analyse le code source et propose des améliorations pour le rendre plus lisible et maintenable. Il est utile pour les développeurs souhaitant améliorer la qualité de leur code.",
             link: "https://github.com/Seishiiin/clean-py",
             logo: "/assets/logos/pycharm.svg",
-            date: "avril 2025 - en cours de développement"
+            date: "avril 2025"
         },
         {
             name: "Aetheris - Library Manager",
